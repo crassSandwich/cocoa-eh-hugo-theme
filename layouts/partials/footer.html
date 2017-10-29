@@ -20,39 +20,51 @@
         </div>
         <div class="icons">
 
+        {{ if .Site.Params.itch }}
+            <a href="https://{{ .Site.Params.itch }}itch.io/" target="_blank">
+                itch.io
+            </a>
+        {{ end }}
+        
         {{ if .Site.Params.facebook }}
             <a href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank">
-                <img class="icon" src="/img/facebook.svg" alt="facebook" />
+                facebook
             </a>
         {{ end }}
 
         {{ if .Site.Params.github }}
             <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <img class="icon" src="/img/github.svg" alt="github" />
+                github
             </a>
         {{ end }}
 
         {{ if .Site.Params.twitter }}
             <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <img class="icon" src="/img/twitter.svg" alt="twitter" />
+                twitter
             </a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
             <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
+                linkedin
             </a>
         {{ end }}
 
+        {{ if .Site.Params.soundcloud }}
+            <a href="https://www.soundcloud.com/{{ .Site.Params.soundcloud }}" target="_blank">
+                soundcloud
+            </a>
+        {{ end }}
+            
         {{ if .Site.Params.email }}
             <a href="mailto:{{ .Site.Params.email }}">
-                <img class="icon" src="/img/email.svg" alt="email" />
+                email
             </a>
         {{ end }}
 
         {{ if .Site.RSSLink }}
             <a href="{{ .Site.RSSLink }}">
-                <img class="icon" src="/img/rss.svg" alt="rss" />
+                rss
             </a>
         {{ end }}
 
